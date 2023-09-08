@@ -1,4 +1,4 @@
-# 1. PART 1 INTRODUCTION
+# PART 1 INTRODUCTION
 
 The ALTAIR 8800 is the **“most economical computer ever”** and the first available in both kit and assembled form. The heart of the ALTAIR 8800 is Intel Corporation’s Model 8080 Microcomputer, a complete Central Processing Unit on a single silicon chip.
 
