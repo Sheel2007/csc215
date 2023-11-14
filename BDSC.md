@@ -38,16 +38,16 @@ var = 0;
 
  - To run your programs in CPM, you can automate manually putting in the reading and compilation commands by creating a file ending in .sub in the B Drive, with the following content:
 
-```
-A:R file.c
-cc file
-clink file
-file
-```
+-   ```
+    A:R file.c
+    cc file
+    clink file
+    file
+    ```
 
-      - To upload that file to CPM, run ```A:R file.sub```
+    - To upload that file to CPM, run ```A:R file.sub```
 
-      - Then, to automatically read, compile, and run your program, you only need to type in the command ```A:SUBMIT file```
+    - Then, to automatically read, compile, and run your program, you only need to type in the command ```A:SUBMIT file```
 
  - ```static``` and ```register``` variables do not exist
 
