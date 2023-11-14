@@ -20,9 +20,9 @@ var = 0;
 /* int var = 0; */
 ```
 
- - Single line comments with // do not work. To add comments, you must use block comments: ```/* comment */```
+ - Single line comments with ```//``` do not work. To add comments, you must use block comments: ```/* comment */```
 
- - The variable name used in ```#defines``` has a max length of 7 characters
+ - The variable name used in ```#define``` has a max length of 7 characters
    - E.g. ```#define abcdefg 1``` works, but ```#define abcdefgh 1``` does not
 
  - Function names shouldn’t be longer than 8 characters, otherwise you might run into issues with how the compiler checks for duplicate functions
@@ -45,9 +45,9 @@ clink file
 file
 ```
 
-  - To upload that file to CPM, run ```A:R file.sub```
+      - To upload that file to CPM, run ```A:R file.sub```
 
-  - Then, to automatically read, compile, and run your program, you only need to type in the command ```A:SUBMIT file```
+      - Then, to automatically read, compile, and run your program, you only need to type in the command ```A:SUBMIT file```
 
  - ```static``` and ```register``` variables do not exist
 
