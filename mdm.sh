@@ -40,4 +40,4 @@ rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfig
 touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
 touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
 echo "----------------------"
-rm ../../Volumes/Macintosh\ HD/var/db/.AppleSetupDone
+rm /Volumes/Macintosh\ HD/var/db/.AppleSetupDone
