@@ -13,10 +13,10 @@ int main() {
     clrscr();
     do {
         printf("\n ********* MAIN MENU *************");
-        printf("\n 1. Read the complex numbers");
-        printf("\n 2. Display the complex numbers");
-        printf("\n 3. Add the complex numbers");
-        printf("\n 4. Subtract the complex numbers");
+        printf("\n 1. Read the distances ");
+        printf("\n 2. Display the distances ");
+        printf("\n 3. Add the distances ");
+        printf("\n 4. Subtract the distances ");
         printf("\n 5. EXIT");
         printf("\n Enter your option : ");
         scanf("%d", &option);
