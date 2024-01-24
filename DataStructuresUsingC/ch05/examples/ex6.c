@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "console_utils.h"
+#include <string.h>
+#include <ncurses.h>
 
 struct student {
     int r_no;
@@ -10,22 +11,34 @@ struct student {
 
 int main() {
     struct student stud1, *ptr_stud1;
-    clrscr();
+
+    initscr(); // Initialize ncurses
     ptr_stud1 = &stud1;
-    printf("\n Enter the details of the student :");
-    printf("\n Enter the Roll Number = ");
-    scanf("%d", &ptr_stud1->r_no);
-    getchar(); // Consume the newline character
-    printf("\n Enter the Name = ");
-    fgets(ptr_stud1->name, 20, stdin);  // Corrected size
-    printf("\n Enter the Course = ");
-    fgets(ptr_stud1->course, 20, stdin);  // Corrected size and data type
-    printf("\n Enter the fees = ");
-    scanf("%d", &ptr_stud1->fees);
-    printf("\n DETAILS OF THE STUDENT");
-    printf("\n ROLL NUMBER = %d", ptr_stud1->r_no);
-    printf("\n NAME = %s", ptr_stud1->name);
-    printf("\n COURSE = %s", ptr_stud1->course);
-    printf("\n FEES = %d", ptr_stud1->fees);
+
+    printw("\nEnter the details of the student :");
+    printw("\nEnter the Roll Number = ");
+    scanw("%d", &ptr_stud1->r_no);
+
+    printw("\nEnter the Name = ");
+    refresh();
+    getnstr(ptr_stud1->name, 20);  // Corrected size
+
+    printw("\nEnter the Course = ");
+    refresh();
+    getnstr(ptr_stud1->course, 20);  // Corrected size and data type
+
+    printw("\nEnter the fees = ");
+    scanw("%d", &ptr_stud1->fees);
+
+    printw("\nDETAILS OF THE STUDENT");
+    printw("\nROLL NUMBER = %d", ptr_stud1->r_no);
+    printw("\nNAME = %s", ptr_stud1->name);
+    printw("\nCOURSE = %s", ptr_stud1->course);
+    printw("\nFEES = %d", ptr_stud1->fees);
+
+    refresh();
+    getch(); // Wait for user input
+    endwin(); // End ncurses mode
+
     return 0;
 }
